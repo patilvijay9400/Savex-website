@@ -34,27 +34,18 @@
 <body>
   <nav>
     <img class="logo" src="./assets/images/savex-logo.png" alt="" srcset="">
-    <div class="search-bar">
-      <input type="text" class="search-input" placeholder="What are you looking for?...">
-      <i class="ri-search-line"></i>
-    </div>
-
-
-
     <div class="nav-right">
+      <div class="search-bar">
+        <input type="text" class="search-input" placeholder="What are you looking for?...">
+        <i class="ri-search-line"></i>
+      </div>
       <div class="nav-item-div">
-        <a onclick="openModalCart()" href="#"><i class="ri-shopping-cart-line"></i></i> Cart</a>
-        <a href="#"><i class="ri-heart-line"></i> Wishlist</a>
-        <a href="#"><i class="ri-phone-line"></i></i> Support</a>
-        <a href="#"><i class="ri-file-upload-line"></i></i> Excel</a>
+        <a onclick="openModalCart()" href="#"><i class="ri-shopping-cart-line"></i></i></a>
+        <a href="#"><i class="ri-heart-line"></i></a>
+        <a href="#"><i class="ri-phone-line"></i></i></a>
         <a id="account-link" href="#"><i class="ri-account-circle-line"></i></i> Account</a>
       </div>
-
-      <button onclick="openModal()" onmouseenter="openDesktopLoginModal()" id="login-button" class="login-btn">Login</button>
-
- 
-
-
+      <button onclick="document.getElementById('id01').style.display='block'" id="login-button" class="login-btn">Login</button>
 
     </div>
 
@@ -209,8 +200,6 @@
 
           <p id="view-all-link"><strong>View All</strong></p>
         </div>
-      </div>
-      <div id="nav-container">
         <div id="nav-block">
           <h2 id="nav-block-title">Vertiv</h2>
           <div id="nav-items">
@@ -282,8 +271,6 @@
 
           <p id="view-all-link"><strong>View All</strong></p>
         </div>
-      </div>
-      <div id="nav-container">
         <div id="nav-block">
           <h2 id="nav-block-title">Ubiquiti</h2>
           <div id="nav-items">
@@ -352,8 +339,6 @@
 
           <p id="view-all-link"><strong>View All</strong></p>
         </div>
-      </div>
-      <div id="nav-container">
         <div id="nav-block">
           <h2 id="nav-block-title">Hewlett Packyard</h2>
           <div id="nav-items">
@@ -422,7 +407,7 @@
           <label class="modal-input-label"><b>Password</b></label>
           <input class="w3-input w3-border modal-input" type="password" placeholder="Enter Password" name="psw"
             required>
-          <button id="modal-login-button" class="w3-block w3-section w3-padding login-button"
+          <button id="modal-login-button" onclick="document.getElementById('id01').style.display='none'" class="w3-block w3-section w3-padding login-button"
             type="submit">Login</button>
         </div>
       </div>
@@ -1130,10 +1115,9 @@
 
     <div id="container">
       <p id="footer-title">Account</p>
-      <p id="footer-links">My Account.</p>
-      <p id="footer-links">Login/Register</p>
-      <p id="footer-links">Cart</p>
-      <p id="footer-links">Wishlist</p>
+      <p><a href="./index.html" id="footer-links">My Account.</a></p>
+      <p><a href="./shopping-cart.html" id="footer-links">Cart</a></p>
+      <p><a href="./index.html" id="footer-links">Wishlist</a></p>
     </div>
 
 
