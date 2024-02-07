@@ -32,7 +32,7 @@ a {
   }
 
   #swiper-hero .swiper-wrapper .swiper-slide img{
-    height: 400px !important;
+    height: auto !important;
   }
 
   .logo {
@@ -1408,7 +1408,7 @@ height: 1px;
   }
 
   #swiper-hero .swiper-wrapper .swiper-slide img{
-    height: 400px !important;
+    height: auto !important;
   }
 
   .logo {
