@@ -100,6 +100,7 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 5px 30px;
   }
 
   .login-modal .content .input-wrapper{
@@ -107,6 +108,7 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    width: 100%;
   }
 
   .login-modal .content .input-wrapper input {
@@ -140,10 +142,10 @@ flex-shrink: 0;
     justify-content: end;
   }
   #navbar{
-    display: block;
+    display: block !important;
     position: relative;
-    height: 66vh;
-    width:100%;
+    /* height: 90vh; */
+    width:95%;
     border-radius: 20px;
     margin-bottom: 20px;
     background: #FFF;
@@ -154,11 +156,15 @@ flex-shrink: 0;
 
   .navbar-container{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     display: none;
     justify-content: center;
-    position: relative;
     z-index: 100;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    z-index: 100;
+    transform: translate(-50%);
  
   }
   #nav-main{
@@ -166,11 +172,15 @@ flex-shrink: 0;
     flex-direction: row;
     gap: 30px;
     justify-content: space-between;
-    height: 50vh;
-    /* width: 70vw; */
+    height: 60vh;
+    width: 70vw;
     overflow-y: auto;
     /* padding: 20px; */
 
+  }
+
+  #nav-main::-webkit-scrollbar {
+    width: 2px;
   }
 
   #navbar-banner{
@@ -184,7 +194,7 @@ flex-shrink: 0;
   #nav-container{
     display: flex;
     /* flex-direction: column; */
-    gap: 50px;
+    gap: 40px;
     flex-wrap: wrap;
     height: 100%;
   }
@@ -298,18 +308,21 @@ flex-shrink: 0;
   .search-bar {
     display: flex;
     align-items: center;
+    width: 50%;
   }
 
   .search-input {
     padding: 5px 5px 5px 30px;
-    border: none;
+    border-color: #F58634;
     border-radius: 5px;
     border-radius: 10px;
-    background: #eeeeee;
-    width: 15vw;
-    height: 2.6rem;
+    background: #ffffff;
+    width: 100%;
+    outline: none;
+    height: 3rem;
     flex-shrink: 0;
   }
+
 
   .login-btn {
     flex-shrink: 0;
@@ -318,7 +331,7 @@ flex-shrink: 0;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding: 8px 16px;
+    padding: 10px 30px;
     border: none;
     border-radius: 8px;
     background: #F58634;
@@ -886,6 +899,7 @@ line-height: 24px;
     height: 100px;
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid #dbdbdb;
   }
 
   #account-navbar{
@@ -1475,6 +1489,7 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 5px 30px;
   }
 
   .login-modal .content .input-wrapper{
@@ -1482,6 +1497,7 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    width: 100%;
   }
 
   .login-modal .content .input-wrapper input {
@@ -1567,7 +1583,7 @@ height: auto;
 
   #nav-container{
     display: flex;
-    gap: 50px;
+    gap: 25px;
     flex-wrap: wrap;
     height: 100%;
   }
@@ -1821,12 +1837,13 @@ line-height: 24px;
 
   .search-input {
     padding: 5px 5px 5px 30px;
-    border: none;
+    border-color: #F58634;
     border-radius: 5px;
     border-radius: 10px;
-    background: #eeeeee;
-    width: 30vw;
-    height: 2.6rem;
+    background: #ffffff;
+    width: 100%;
+    outline: none;
+    height: 3rem;
     flex-shrink: 0;
   }
 
@@ -1837,7 +1854,7 @@ line-height: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding: 8px 16px;
+    padding: 10px 30px;
     border: none;
     border-radius: 8px;
     background: #F58634;
@@ -2259,6 +2276,7 @@ line-height: 24px;
     height: 100px;
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid #dbdbdb;
   }
 
   #sub-items{
@@ -2868,7 +2886,7 @@ line-height: normal;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  padding: 8px 16px;
+  padding: 10px 30px;
   border: none;
   border-radius: 8px;
   background: #F58634;
@@ -2912,14 +2930,16 @@ line-height: normal;
 
   .search-input {
     padding: 5px 5px 5px 30px;
-    border: none;
+    border-color: #F58634;
     border-radius: 5px;
     border-radius: 10px;
-    background: #eeeeee;
+    background: #ffffff;
     width: 15vw;
-    height: 2.6rem;
+    height: 3rem;
+    outline: none;
     flex-shrink: 0;
   }
+
 
   .login-btn {
     flex-shrink: 0;
@@ -2928,7 +2948,7 @@ line-height: normal;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding: 8px 16px;
+    padding: 10px 30px;
     border: none;
     border-radius: 8px;
     background: #F58634;
@@ -3687,10 +3707,6 @@ font-weight: 400;
 line-height: 26px; /* 260% */
 }
 
-.wishlist{
-
-
-}
 .grid-card-content{
   display: flex;
   flex-direction: column;
@@ -4350,7 +4366,7 @@ line-height: 26px; /* 260% */
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding: 8px 16px;
+    padding: 10px 30px;
     border: none;
     border-radius: 8px;
     background: #F58634;
@@ -4398,9 +4414,9 @@ line-height: 26px; /* 260% */
     border: none;
     border-radius: 5px;
     border-radius: 10px;
-    background: #eeeeee;
+    background: #ffffff;
     width: 15vw;
-    height: 2.6rem;
+    height: 3rem;
     flex-shrink: 0;
   }
 
@@ -4411,7 +4427,7 @@ line-height: 26px; /* 260% */
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding: 8px 16px;
+    padding: 10px 30px;
     border: none;
     border-radius: 8px;
     background: #F58634;

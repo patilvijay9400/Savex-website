@@ -34,18 +34,21 @@
 <body>
   <nav>
     <a href="./index.html" style="text-decoration: none; border: 0;"><img class="logo" src="./assets/images/savex-logo.png" alt="" srcset=""></a>
+    <div class="search-bar">
+      <input type="text" class="search-input" placeholder="What are you looking for?...">
+      <i class="ri-search-line"></i>
+    </div>
+
+
+
     <div class="nav-right">
-      <div class="search-bar">
-        <input type="text" class="search-input" placeholder="What are you looking for?...">
-        <i class="ri-search-line"></i>
-      </div>
       <div class="nav-item-div">
-        <a onclick="openModalCart()" href="#"><i class="ri-shopping-cart-line"></i></i></a>
-        <a href="#"><i class="ri-heart-line"></i></a>
-        <a href="#"><i class="ri-phone-line"></i></i></a>
+        <a onclick="openModalCart()" href="#"><i class="ri-shopping-cart-line"></i></i> Cart</a>
+        <a href="#"><i class="ri-heart-line"></i> Wishlist</a>
+        <a href="#"><i class="ri-phone-line"></i></i> Support</a>
         <a id="account-link" href="#"><i class="ri-account-circle-line"></i></i> Account</a>
       </div>
-      <button onclick="document.getElementById('id01').style.display='block'" id="login-button" class="login-btn">Login</button>
+<button onclick="openModal()" onmouseenter="openDesktopLoginModal()" id="login-button" class="login-btn">Login</button>
 
     </div>
 
