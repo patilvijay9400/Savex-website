@@ -812,12 +812,11 @@ line-height: 24px;
 
     .chart-middle {
       display: flex;
-      gap: 40px;
       align-items: center;
+      justify-content: space-between;
 
       img {
-        height: 40px;
-        width: auto;
+        width: 50%;
       }
     }
   }
@@ -1873,6 +1872,8 @@ line-height: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
+    width: 40%;
+    height: 40px;
     border:0;
   }
 
@@ -2191,12 +2192,11 @@ line-height: 24px;
 
     .chart-middle {
       display: flex;
-      gap: 40px;
+      justify-content: space-between;
       align-items: center;
 
       img {
-        height: 40px;
-        width: auto;
+        width: 50%;
       }
     }
   }
@@ -3130,6 +3130,8 @@ line-height: 24px;
     font-weight: 600;
     line-height: 24px;
     border: none;
+    width: 40%;
+    height: 40px;
     border:0;
   }
 
@@ -3470,12 +3472,11 @@ line-height: 24px;
 
     .chart-middle {
       display: flex;
-      gap: 40px;
+      justify-content: space-between;
       align-items: center;
 
       img {
-        height: 40px;
-        width: auto;
+        width: 50%;
       }
     }
   }
@@ -4606,6 +4607,8 @@ line-height: 24px;
     font-weight: 600;
     line-height: 24px;
     border: none;
+    width: 40%;
+    height: 40px;
     border:0;
   }
 
@@ -4948,12 +4951,11 @@ line-height: 24px;
 
     .chart-middle {
       display: flex;
-      gap: 40px;
+      justify-content: space-between;
       align-items: center;
 
       img {
-        height: 40px;
-        width: auto;
+        width: 50%;
       }
     }
   }

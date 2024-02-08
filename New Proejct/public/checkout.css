@@ -1,8 +1,6 @@
 
 @media screen and (min-width: 1400px) {
   #main {
-    width: 100vw;
-    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -515,8 +513,6 @@
 /* Small desktop/laptop styles */
 @media only screen and (min-width: 992px) and (max-width: 1440px) {
   #main {
-    width: 100vw;
-    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
